@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="18">
+ <tileset firstgid="1" name="office_floors" tilewidth="32" tileheight="32" tilecount="3" columns="3">
+  <image source="office/office_floors_tileset.png" width="96" height="32"/>
+ </tileset>
+ <tileset firstgid="4" name="office_walls_tileset" tilewidth="32" tileheight="32" tilecount="25" columns="8">
+  <image source="office/office_walls_tileset.png" width="256" height="128"/>
+  <tile id="7">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="29" name="moble_previews" tilewidth="32" tileheight="32" tilecount="6" columns="0">
+  <tile id="0">
+   <image source="office/cut/desk.png" width="68" height="53"/>
+  </tile>
+  <tile id="1">
+   <image source="office/cut/computer.png" width="32" height="34"/>
+  </tile>
+  <tile id="2">
+   <image source="office/cut/chair.png" width="34" height="58"/>
+  </tile>
+  <tile id="3">
+   <image source="office/cut/cabinet.png" width="31" height="59"/>
+  </tile>
+  <tile id="4">
+   <image source="office/cut/plant.png" width="35" height="57"/>
+  </tile>
+  <tile id="5">
+   <image source="office/cut/clock.png" width="32" height="23"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="Terra" width="20" height="15">
+  <data encoding="csv">
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+  </data>
+ </layer>
+ <layer id="2" name="Mobles" width="20" height="15">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  </data>
+ </layer>
+ <layer id="3" name="Parets" width="20" height="15">
+  <data encoding="csv">
+11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,0,0,0,0,0,0,0,0,0,11,0,0,0,0,0,0,0,0,11,
+11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11
+  </data>
+ </layer>
+ <objectgroup id="4" name="Objectes">
+  <object id="1" x="80" y="80" width="0" height="0">
+   <point/>
+   <properties>
+    <property name="tipus" value="spawn"/>
+   </properties>
+  </object>
+  <object id="2" x="32" y="32" width="288" height="416">
+   <properties>
+    <property name="tipus" value="zona"/>
+    <property name="nomSala" value="Sala 1"/>
+    <property name="aforament" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="3" x="352" y="32" width="256" height="416">
+   <properties>
+    <property name="tipus" value="zona"/>
+    <property name="nomSala" value="Sala 2"/>
+    <property name="aforament" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="4" x="192" y="160" width="32" height="32">
+   <ellipse/>
+   <properties>
+    <property name="tipus" value="monitor"/>
+    <property name="titol" value="Pantalla Sala 1"/>
+   </properties>
+  </object>
+  <object id="5" x="544" y="160" width="32" height="32">
+   <ellipse/>
+   <properties>
+    <property name="tipus" value="monitor"/>
+    <property name="titol" value="Pantalla Sala 2"/>
+   </properties>
+  </object>
+  <object id="6" gid="29" x="94" y="128" width="68" height="53">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="desks"/>
+    <property name="frame" value="office_desk_front"/>
+    <property name="gx" type="int" value="96"/>
+    <property name="gy" type="int" value="96"/>
+   </properties>
+  </object>
+  <object id="7" gid="30" x="96" y="124" width="32" height="34">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="tech"/>
+    <property name="frame" value="computer_front"/>
+    <property name="gx" type="int" value="96"/>
+    <property name="gy" type="int" value="96"/>
+   </properties>
+  </object>
+  <object id="8" gid="31" x="95" y="190" width="34" height="58">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="seating"/>
+    <property name="frame" value="office_chair_front"/>
+    <property name="gx" type="int" value="96"/>
+    <property name="gy" type="int" value="160"/>
+   </properties>
+  </object>
+  <object id="9" gid="32" x="224" y="94" width="31" height="59">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="storage"/>
+    <property name="frame" value="filing_cabinet_front"/>
+    <property name="gx" type="int" value="224"/>
+    <property name="gy" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="10" gid="33" x="63" y="346" width="35" height="57">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="decor"/>
+    <property name="frame" value="office_plant_front"/>
+    <property name="gx" type="int" value="64"/>
+    <property name="gy" type="int" value="320"/>
+   </properties>
+  </object>
+  <object id="11" gid="34" x="160" y="18" width="32" height="23">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="decor"/>
+    <property name="frame" value="wall_clock_front"/>
+    <property name="gx" type="int" value="160"/>
+    <property name="gy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="12" gid="29" x="446" y="128" width="68" height="53">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="desks"/>
+    <property name="frame" value="office_desk_front"/>
+    <property name="gx" type="int" value="448"/>
+    <property name="gy" type="int" value="96"/>
+   </properties>
+  </object>
+  <object id="13" gid="30" x="448" y="124" width="32" height="34">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="tech"/>
+    <property name="frame" value="computer_front"/>
+    <property name="gx" type="int" value="448"/>
+    <property name="gy" type="int" value="96"/>
+   </properties>
+  </object>
+  <object id="14" gid="31" x="447" y="190" width="34" height="58">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="seating"/>
+    <property name="frame" value="office_chair_front"/>
+    <property name="gx" type="int" value="448"/>
+    <property name="gy" type="int" value="160"/>
+   </properties>
+  </object>
+  <object id="15" gid="32" x="576" y="94" width="31" height="59">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="storage"/>
+    <property name="frame" value="filing_cabinet_front"/>
+    <property name="gx" type="int" value="576"/>
+    <property name="gy" type="int" value="64"/>
+   </properties>
+  </object>
+  <object id="16" gid="33" x="415" y="346" width="35" height="57">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="decor"/>
+    <property name="frame" value="office_plant_front"/>
+    <property name="gx" type="int" value="416"/>
+    <property name="gy" type="int" value="320"/>
+   </properties>
+  </object>
+  <object id="17" gid="34" x="512" y="18" width="32" height="23">
+   <properties>
+    <property name="tipus" value="moble"/>
+    <property name="atles" value="decor"/>
+    <property name="frame" value="wall_clock_front"/>
+    <property name="gx" type="int" value="512"/>
+    <property name="gy" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

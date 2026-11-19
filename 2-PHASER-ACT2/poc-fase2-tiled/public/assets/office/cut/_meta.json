@@ -1,0 +1,62 @@
+{
+ "desk": {
+  "w": 68,
+  "h": 53,
+  "anchor": {
+   "x": 2,
+   "y": 21
+  },
+  "atles": "desks",
+  "frame": "office_desk_front"
+ },
+ "computer": {
+  "w": 32,
+  "h": 34,
+  "anchor": {
+   "x": 0,
+   "y": 6
+  },
+  "atles": "tech",
+  "frame": "computer_front"
+ },
+ "chair": {
+  "w": 34,
+  "h": 58,
+  "anchor": {
+   "x": 1,
+   "y": 28
+  },
+  "atles": "seating",
+  "frame": "office_chair_front"
+ },
+ "cabinet": {
+  "w": 31,
+  "h": 59,
+  "anchor": {
+   "x": 0,
+   "y": 29
+  },
+  "atles": "storage",
+  "frame": "filing_cabinet_front"
+ },
+ "plant": {
+  "w": 35,
+  "h": 57,
+  "anchor": {
+   "x": 1,
+   "y": 31
+  },
+  "atles": "decor",
+  "frame": "office_plant_front"
+ },
+ "clock": {
+  "w": 32,
+  "h": 23,
+  "anchor": {
+   "x": 0,
+   "y": 5
+  },
+  "atles": "decor",
+  "frame": "wall_clock_front"
+ }
+}
